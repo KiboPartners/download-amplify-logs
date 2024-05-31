@@ -56,7 +56,7 @@ async function main() {
       const buildLog = buildLogs.jobs[i]
       console.log(buildLog)
 
-      const logFolder = `JOBID_${buildLog.jobId}_${new Date().toISOString()}`
+      const logFolder = `JobID_${buildLog.jobId}_${new Date().toISOString()}`
       const logPath = `./logs/${logFolder}`
 
       fs.mkdirSync(logPath)
